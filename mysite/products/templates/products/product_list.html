@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block title %}Product List{% endblock %}
+
+{% block content %}
+{% comment %} <div class="container-fluid"> {% endcomment %}
+    <form method="GET">
+        <div class="row">
+            <div class="col-md-9">
+                <div class="form-group">
+                    <input type="text" id="search_query" name="search_query" class="form-control" placeholder="Search for products" value="{{ request.GET.search_query }}">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <button type="submit" class="btn btn-outline-success">Search</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<div class="container mt-4">
+    <h1 class="text-center"><strong> Product List</strong></h1>
+    <div class="row mt-4">
+        {% for product in products %}
+        <div class="col-lg-4 col-md-6 col-sm-12 mb-4">
+            <div class="card card-cls">
+                <img src="{{ product.image.url }}" alt="{{ product.name }}" class="card-img-top prod-img-list img-fluid">
+                <div class="card-body text-center">
+                    <h5 class="card-title"><strong>{{ product.name }}</strong></h5>
+                    {% comment %} <p class="card-text text-secondary">{{ product.description |safe}}</p> {% endcomment %}
+                    <p class="card-text"><em>Price: {{ product.price }} Tk.</em></p>
+                    <a href="{% url 'products:product_detail' product.id %}" class="btn btn-warning">View Details</a>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+{% comment %} </div> {% endcomment %}
+{% endblock %}

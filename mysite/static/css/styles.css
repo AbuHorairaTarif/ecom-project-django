@@ -1,0 +1,112 @@
+/* Additional custom styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f1e9ff;
+}
+
+/* In your CSS file */
+p, li {
+    font-family: 'Crimson Text', serif;
+}
+
+/* In your CSS file */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Pacifico', cursive;
+}
+
+
+.container {
+    background-color: #ffffff;
+    border-radius: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.form-group {
+    margin-bottom: 0;
+}
+
+.btn-outline-success {
+    margin: 1px;
+    width: 100%;
+}
+
+.img-effect {
+    box-shadow: 0px 0px 5px rgba(55, 10, 255, 0.3);
+}
+
+/* card styling for product_list.html */
+
+.card-cls {
+    /* border:1px solid rgba(173, 187, 201, 0.966); */
+    box-shadow: 0px 0px 10px rgba(55, 10, 255, 0.4);
+}
+
+.card {
+    box-shadow: 0px 0px 10px rgba(55, 10, 255, 0.4);
+}
+.prod-img-list {
+    height: 450px;
+    width: 450px;
+    
+}
+
+/* Style for the footer */
+.footer {
+    background-color: #f7f5de;
+    color: #050505;
+    
+}
+
+.footer a {
+    color: purple;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: none;
+    color: #ffcc00;
+}
+
+.footer h5 {
+    font-size: 20px;
+    color: goldenrod;
+}
+
+/* Style for the social media icons */
+.footer ul.list-unstyled li a i {
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+/* Style for the horizontal line */
+.footer hr {
+    border-top: 1px solid #555;
+}
+
+/* Style for the copyright text */
+.footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+    .footer {
+        text-align: center;
+    }
+    
+    .footer .container {
+        padding: 15px;
+    }
+    
+    .footer h5 {
+        font-size: 16px;
+    }
+    
+    .footer ul.list-unstyled li {
+        margin-bottom: 10px;
+    }
+}
+
