@@ -87,12 +87,7 @@ Superadmin (DJango Dashboard): (For example)
 
 Pic1 ->
 ![Pic 1](https://github.com/AbuHorairaTarif/ecom-project-django/blob/main/screenshots/pic1.png)
-<hr/>
-Pic2 ->
-![Pic 2](https://github.com/AbuHorairaTarif/ecom-project-django/blob/main/screenshots/pic2.png)
-<hr/>
-Pic3 ->
-![Pic 3](https://github.com/AbuHorairaTarif/ecom-project-django/blob/main/screenshots/pic3.png)
+
 
 **NOTE** 
 In the mysite/media/products, you will find some sample image for testing or you can download from online.
